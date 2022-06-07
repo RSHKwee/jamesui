@@ -13,12 +13,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.vaadin.dialogs.ConfirmDialog;
 
-import com.google.gwt.user.client.ui.FocusListener;
-import com.google.gwt.user.client.ui.Widget;
-import com.vaadin.data.Property;
-import com.vaadin.data.Property.ValueChangeEvent;
+//import com.google.gwt.user.client.ui.FocusListener;
+//import com.google.gwt.user.client.ui.Widget;
+//import com.vaadin.data.Property;
+//import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.data.validator.StringLengthValidator;
-import com.vaadin.event.FieldEvents;
+//import com.vaadin.event.FieldEvents;
 import com.vaadin.event.FieldEvents.FocusEvent;
 import com.vaadin.event.ItemClickEvent;
 import com.vaadin.event.ItemClickEvent.ItemClickListener;

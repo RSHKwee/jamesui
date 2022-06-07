@@ -11,7 +11,7 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.james.jamesui.backend.configuration.bean.Dns;
 import org.apache.james.jamesui.backend.configuration.bean.JamesuiConfiguration;
 import org.apache.james.jamesui.backend.configuration.manager.DnsConfigManager;
-import org.apache.james.jamesui.backend.configuration.manager.EnvironmentConfigurationReader;
+//import org.apache.james.jamesui.backend.configuration.manager.EnvironmentConfigurationReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.vaadin.dialogs.ConfirmDialog;
@@ -165,7 +165,7 @@ public class DnsConfigurationPanel extends VerticalLayout {
 	        Collection<?> itemIDS= dnsIpAddressTable.getContainerDataSource().getItemIds();
 	        for (Object itemID : itemIDS)
 	        {
-	            Property property = dnsIpAddressTable.getContainerDataSource().getContainerProperty(itemID, "DNS");				          	     
+	            Property<?> property = dnsIpAddressTable.getContainerDataSource().getContainerProperty(itemID, "DNS");				          	     
 	            dnsServer.add(property.getValue());
 	        }
         	

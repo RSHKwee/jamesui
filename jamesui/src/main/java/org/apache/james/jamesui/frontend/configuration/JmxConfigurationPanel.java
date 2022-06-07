@@ -1,7 +1,7 @@
 
 package org.apache.james.jamesui.frontend.configuration;
 
-import java.io.File;
+// import java.io.File;
 
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.james.jamesui.backend.configuration.bean.JamesuiConfiguration;
@@ -43,7 +43,7 @@ public class JmxConfigurationPanel extends Panel {
 	/* the manager used to manage stored DNS configuration */
 	private JmxConfigManager jmxConfigManager;
 	
-	private JamesuiConfiguration jamesuiConfiguration;
+//	private JamesuiConfiguration jamesuiConfiguration;
 
 	/**
 	 * Constructor

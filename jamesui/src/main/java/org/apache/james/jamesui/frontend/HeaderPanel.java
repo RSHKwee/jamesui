@@ -5,11 +5,11 @@ package org.apache.james.jamesui.frontend;
 import java.io.File;
 
 import org.apache.james.jamesui.backend.configuration.bean.JamesuiLoginUser;
-import org.apache.james.jamesui.backend.configuration.manager.EnvironmentConfigurationReader;
+// import org.apache.james.jamesui.backend.configuration.manager.EnvironmentConfigurationReader;
 import org.quartz.Scheduler;
-import org.quartz.SchedulerException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+// import org.quartz.SchedulerException;
+// import org.slf4j.Logger;
+// import org.slf4j.LoggerFactory;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 import com.vaadin.event.MouseEvents;
@@ -27,16 +27,16 @@ public class HeaderPanel extends HorizontalLayout {
 	
 	private static final long serialVersionUID = 1L;
 
-	private final static Logger LOG = LoggerFactory.getLogger(HeaderPanel.class);
+//	private final static Logger LOG = LoggerFactory.getLogger(HeaderPanel.class);
 	
 	private Label welcomeMsgLabel;
 	private Image jamesLogoImage;
 	private Image logoutImage;
 	private JamesuiLoginUser loggedUser;
 	
-	private Scheduler scheduler;
+//	private Scheduler scheduler;
 	
-	private static final String JAMESUI_TMP_FILE_NAME = "jamesui.tmp";	
+//	private static final String JAMESUI_TMP_FILE_NAME = "jamesui.tmp";	
 
 	/**
 	 * Constructor
@@ -49,7 +49,7 @@ public class HeaderPanel extends HorizontalLayout {
 	   
 	   String basepath = VaadinService.getCurrent().getBaseDirectory().getAbsolutePath(); 
 	   
-	   this.scheduler = sch;
+//	   this.scheduler = sch;
        this.logoutImage = new Image("Logout", new FileResource(new File(basepath +"/WEB-INF/images/logout.png")));       
        this.logoutImage.setAlternateText("Logout");
        this.logoutImage.addClickListener(new MouseEvents.ClickListener() {		
